@@ -3,7 +3,7 @@
 
 String data;
 int commaPosition;
-int i =0;
+int i,j=0;
 
 void setup() {
   pinMode(13, OUTPUT);
@@ -35,14 +35,13 @@ void loop() {
   }
   /*For the last value*/
   charBuf[i]=datafinal;
-  int j;
   
   /*Print the results*/
   for(j=0;j<i+1;j++){
     Serial.println(charBuf[j]+"index="+j);
   }
   
-  /*Reset*/
+  /*Reset all Value*/
   i=0;
   data="";
   
